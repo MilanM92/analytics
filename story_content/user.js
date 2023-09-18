@@ -2,61 +2,61 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6ANzjbNb0KZ":
+      case "6IGaEB40a7L":
         Script1();
         break;
-      case "678jKWqZ21R":
+      case "5UnaDUxN0rd":
         Script2();
         break;
-      case "6gDHaLcjZls":
+      case "6GjpDLVLtec":
         Script3();
         break;
-      case "6h0f5yFTWXk":
+      case "6nl7P1zUVsK":
         Script4();
         break;
-      case "5tOyQzrspTl":
+      case "65qanNPwxyO":
         Script5();
         break;
-      case "67rPL7wCQGK":
+      case "6HZNKBguKI7":
         Script6();
         break;
-      case "5h3gZBnxbpF":
+      case "5n9xghP3jGq":
         Script7();
         break;
-      case "5zBGLQXnaya":
+      case "66V2mYd9i6P":
         Script8();
         break;
-      case "64PlC7tWBgh":
+      case "6PFoj4M4o6E":
         Script9();
         break;
-      case "6LGniypf459":
+      case "5thYpZvJD7U":
         Script10();
         break;
-      case "5gVavYKGJqq":
+      case "5Wne0Aqnv24":
         Script11();
         break;
-      case "6ODuOfiLKul":
+      case "5W9PjakncdH":
         Script12();
         break;
-      case "5r29K2jVh7H":
+      case "6ecGQSkM6YU":
         Script13();
         break;
-      case "5iV4kJTcpDv":
+      case "62x4peKoFFN":
         Script14();
         break;
-      case "6LIBgIcamhb":
+      case "6JWQTIhNqnP":
         Script15();
         break;
-      case "6fOo7tFoQUg":
+      case "6kAvf1mporE":
         Script16();
         break;
-      case "6LxAKZFZqbh":
+      case "5X0JEJzNb8C":
         Script17();
         break;
-      case "6ddHdpNnHx6":
+      case "6Ihv4SBN7yv":
         Script18();
         break;
-      case "5rJb7rfwHen":
+      case "6Zu05JFKAD6":
         Script19();
         break;
   }
@@ -69,7 +69,7 @@ var player = GetPlayer();
 var pagetitle = player.GetVar(“PageTitle”);
 
 //Send PageTitle to Analytics
-ga(‘send’, ‘screenview’, {screenName: pagetitle});
+gtag(‘send’, ‘screenview’, {screenName: pagetitle});
 }
 
 function Script2()
@@ -79,7 +79,7 @@ var player = GetPlayer();
 var pagetitle = player.GetVar(“PageTitle”);
 
 //Send PageTitle to Analytics
-ga(‘send’, ‘screenview’, {screenName: pagetitle});
+gtag(‘send’, ‘screenview’, {screenName: pagetitle});
 }
 
 function Script3()
@@ -89,7 +89,7 @@ var player = GetPlayer();
 var pagetitle = player.GetVar(“PageTitle”);
 
 //Send PageTitle to Analytics
-ga(‘send’, ‘screenview’, {screenName: pagetitle});
+gtag(‘send’, ‘screenview’, {screenName: pagetitle});
 }
 
 function Script4()
@@ -109,14 +109,14 @@ function Script6()
 
 function Script7()
 {
-  ga(‘send’, ‘event’, ‘Question’, ‘incorrect’, ‘Question 1’);
+  gtag(‘send’, ‘event’, ‘Question’, ‘incorrect’, ‘Question 1’);
 
 
 }
 
 function Script8()
 {
-  ga(‘send’, ‘event’, ‘Question’, ‘correct’, ‘Question 1’);
+  gtag(‘send’, ‘event’, ‘Question’, ‘correct’, ‘Question 1’);
 }
 
 function Script9()
