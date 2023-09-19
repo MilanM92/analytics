@@ -2,61 +2,61 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6IGaEB40a7L":
+      case "6G5Me9w99uS":
         Script1();
         break;
-      case "5UnaDUxN0rd":
+      case "5iejkMftumT":
         Script2();
         break;
-      case "6GjpDLVLtec":
+      case "6f84jfFago0":
         Script3();
         break;
-      case "6nl7P1zUVsK":
+      case "5kronbWLEby":
         Script4();
         break;
-      case "65qanNPwxyO":
+      case "6Xqjir9PPgy":
         Script5();
         break;
-      case "6HZNKBguKI7":
+      case "6oGY80RiBNu":
         Script6();
         break;
-      case "5n9xghP3jGq":
+      case "6DxL6tBaocB":
         Script7();
         break;
-      case "66V2mYd9i6P":
+      case "6UYiuCLqsBB":
         Script8();
         break;
-      case "6PFoj4M4o6E":
+      case "5ti6edY2gX8":
         Script9();
         break;
-      case "5thYpZvJD7U":
+      case "5kMHu39G5lE":
         Script10();
         break;
-      case "5Wne0Aqnv24":
+      case "5YOr4DC5A2n":
         Script11();
         break;
-      case "5W9PjakncdH":
+      case "5eeZE35nP1d":
         Script12();
         break;
-      case "6ecGQSkM6YU":
+      case "5pf9wGnqo5V":
         Script13();
         break;
-      case "62x4peKoFFN":
+      case "6ckd0ar8UBR":
         Script14();
         break;
-      case "6JWQTIhNqnP":
+      case "6Ob8W28JlQY":
         Script15();
         break;
-      case "6kAvf1mporE":
+      case "5uDEQZLB3TH":
         Script16();
         break;
-      case "5X0JEJzNb8C":
+      case "5Z0j4S34w6h":
         Script17();
         break;
-      case "6Ihv4SBN7yv":
+      case "5x28ZVMG0Bj":
         Script18();
         break;
-      case "6Zu05JFKAD6":
+      case "6Dol95sjgGq":
         Script19();
         break;
   }
@@ -66,30 +66,30 @@ function Script1()
 {
   //Get Var Pagetitle from Storyline
 var player = GetPlayer();
-var pagetitle = player.GetVar(“PageTitle”);
+var pagetitle = player.GetVar("PageTitle");
 
 //Send PageTitle to Analytics
-gtag(‘send’, ‘screenview’, {screenName: pagetitle});
+gtag('send', 'screenview', {screenName: pagetitle});
 }
 
 function Script2()
 {
   //Get Var Pagetitle from Storyline
 var player = GetPlayer();
-var pagetitle = player.GetVar(“PageTitle”);
+var pagetitle = player.GetVar("PageTitle");
 
 //Send PageTitle to Analytics
-gtag(‘send’, ‘screenview’, {screenName: pagetitle});
+gtag('send', 'screenview', {screenName: pagetitle});
 }
 
 function Script3()
 {
   //Get Var Pagetitle from Storyline
 var player = GetPlayer();
-var pagetitle = player.GetVar(“PageTitle”);
+var pagetitle = player.GetVar("PageTitle");
 
 //Send PageTitle to Analytics
-gtag(‘send’, ‘screenview’, {screenName: pagetitle});
+gtag('send', 'screenview', {screenName: pagetitle});
 }
 
 function Script4()
@@ -109,46 +109,46 @@ function Script6()
 
 function Script7()
 {
-  gtag(‘send’, ‘event’, ‘Question’, ‘incorrect’, ‘Question 1’);
+  gtag('send', 'event', 'Question', 'incorrect', 'Question 1');
 
 
 }
 
 function Script8()
 {
-  gtag(‘send’, ‘event’, ‘Question’, ‘correct’, ‘Question 1’);
+  gtag('send', 'event', 'Question', 'correct', 'Question 1');
 }
 
 function Script9()
 {
   //Get Var Pagetitle from Storyline
 var player = GetPlayer();
-var pagetitle = player.GetVar(“PageTitle”);
+var pagetitle = player.GetVar("PageTitle");
 
 //Send PageTitle to Analytics
-ga(‘send’, ‘screenview’, {screenName: pagetitle});
+gtag('send', 'screenview', {screenName: pagetitle});
 }
 
 function Script10()
 {
   //Get Var Pagetitle from Storyline
 var player = GetPlayer();
-var pagetitle = player.GetVar(“PageTitle”);
+var pagetitle = player.GetVar("PageTitle");
 
 //Send PageTitle to Analytics
-ga(‘send’, ‘screenview’, {screenName: pagetitle});
+gtag('send', 'screenview', {screenName: pagetitle});
 }
 
 function Script11()
 {
-  ga(‘send’, ‘event’, ‘Question’, ‘incorrect’, ‘Question 2’);
+  gtag('send', 'event', 'Question', 'incorrect', 'Question 2');
 
 
 }
 
 function Script12()
 {
-  ga(‘send’, ‘event’, ‘Question’, ‘correct’, ‘Question 2’);
+  gtag('send', 'event', 'Question', 'correct', 'Question 2');
 
 
 }
