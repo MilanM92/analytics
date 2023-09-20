@@ -2,77 +2,59 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5fJ25ajlYNy":
+      case "5fp95ysfURb":
         Script1();
         break;
-      case "5fPVpt7IVCX":
+      case "5uq6vRxQlWY":
         Script2();
         break;
-      case "5spz109QWCz":
+      case "5wmH3grfPAl":
         Script3();
         break;
-      case "6PXeqeWMW3s":
+      case "6ZO2LfusNYe":
         Script4();
         break;
-      case "5xQE0LO6oE7":
+      case "6oJW1jFXfDn":
         Script5();
         break;
-      case "6PC5WHtEwuo":
+      case "6IJHWd2EFJi":
         Script6();
         break;
-      case "5ubrxvEwjG1":
+      case "5x7JRtsWzZT":
         Script7();
         break;
-      case "6MWQoeKo0QG":
+      case "5qJO4o8splG":
         Script8();
         break;
-      case "5zsAJ3QbJ3o":
+      case "5klYogQSWbW":
         Script9();
         break;
-      case "5mZpHWAQ82t":
+      case "6VqrBA1pwH1":
         Script10();
         break;
-      case "6DQKs7DfUkG":
+      case "5gQAcdpM5y1":
         Script11();
         break;
-      case "5t3y4VFiZNc":
+      case "63L04TuKzkx":
         Script12();
         break;
-      case "686ABEHoTex":
+      case "6DJeiKOr3cd":
         Script13();
         break;
-      case "5jqQ7suwaGa":
+      case "5h7bbIAdidx":
         Script14();
         break;
-      case "5qm2RCtOp9b":
+      case "6I59tmXc1jo":
         Script15();
         break;
-      case "5ahjytMPCdY":
+      case "6rQ0JIwqjIo":
         Script16();
         break;
-      case "6UQvnRMg9LA":
+      case "5q4auNyMOEo":
         Script17();
         break;
-      case "6Ht4o52GoDz":
+      case "6YwwAaVkyMl":
         Script18();
-        break;
-      case "6fmPxrV9Tnb":
-        Script19();
-        break;
-      case "6Ik1HHYGSPp":
-        Script20();
-        break;
-      case "5vBRUyTjSTR":
-        Script21();
-        break;
-      case "6Ux5txTIzpQ":
-        Script22();
-        break;
-      case "6L1T156exdb":
-        Script23();
-        break;
-      case "64GVPrM2CB8":
-        Script24();
         break;
   }
 }
@@ -86,7 +68,7 @@ var pagetitle = player.GetVar("PageTitle");
 //Send PageTitle to Analytics
 gtag('event', 'screen_view', {
   'app_name': 'myAppName',
-  'page_title': 'Slide1'
+  'page_name': 'Slide1'
 });
 }
 
@@ -100,64 +82,30 @@ function Script2()
 
 function Script3()
 {
-  gtag('config', 'G-SRFJ3W9S0F', {
-  'page_title': 'Travel Destinations',
-  'currency': 'USD'
+  //Get Var Pagetitle from Storyline
+var player = GetPlayer();
+var pagetitle = player.GetVar("PageTitle");
+
+//Send PageTitle to Analytics
+gtag('event', 'screen_view', {
+  'app_name': 'myAppName',
+  'page_name': 'Slide1'
 });
 }
 
 function Script4()
-{
-  gtag('event', 'screen_view', {
-  'app_name': 'myAppName',
-  'screen_name': 'Home12'
-});
-}
-
-function Script5()
-{
-  gtag('event', 'screen_view', {
-  'app_name': 'myAppName',
-  'page_title': 'Slide1'
-});
-}
-
-function Script6()
-{
-  gtag('event', 'slide_title', {
-  'app_name': 'myAppName',
-  'page_title': 'Slide2'
-});
-}
-
-function Script7()
-{
-  ga(‘send’, ‘event’, ‘Button’, ‘click’, ‘Tab 01’);’
-}
-
-function Script8()
-{
-  ga(‘send’, ‘event’, ‘Button’, ‘click’, ‘Tab 02’);’
-}
-
-function Script9()
-{
-  ga(‘send’, ‘event’, ‘Button’, ‘click’, ‘Tab 03’);’
-}
-
-function Script10()
 {
   gtag(‘send’, ‘event’, ‘Question’, ‘incorrect’, ‘Question 1’);
 
 
 }
 
-function Script11()
+function Script5()
 {
   gtag(‘send’, ‘event’, ‘Question’, ‘correct’, ‘Question 1’);
 }
 
-function Script12()
+function Script6()
 {
   gtag('event', 'slide_title', {
   'app_name': 'myAppName',
@@ -165,7 +113,7 @@ function Script12()
 });
 }
 
-function Script13()
+function Script7()
 {
   //Get Var Pagetitle from Storyline
 var player = GetPlayer();
@@ -175,7 +123,7 @@ var pagetitle = player.GetVar("PageTitle");
 ga('send', 'screenview', {screenName: 'Slide4_Tab3'});
 }
 
-function Script14()
+function Script8()
 {
   //Get Var Pagetitle from Storyline
 var player = GetPlayer();
@@ -185,7 +133,7 @@ var pagetitle = player.GetVar("PageTitle");
 ga('send', 'screenview', {screenName: 'Slide4_Tab2'});
 }
 
-function Script15()
+function Script9()
 {
   //Get Var Pagetitle from Storyline
 var player = GetPlayer();
@@ -193,6 +141,50 @@ var pagetitle = player.GetVar("PageTitle");
 
 //Send PageTitle to Analytics
 ga('send', 'screenview', {screenName: 'Slide4_Tab1'});
+}
+
+function Script10()
+{
+  //Get Var Pagetitle from Storyline
+var player = GetPlayer();
+var pagetitle = player.GetVar(“PageTitle”);
+
+//Send PageTitle to Analytics
+ga(‘send’, ‘screenview’, {screenName: pagetitle});
+}
+
+function Script11()
+{
+  ga('send', 'event', 'Button', 'click', 'Non-Work');
+}
+
+function Script12()
+{
+  ga('send', 'event', 'Button', 'click', 'Work-Related');
+}
+
+function Script13()
+{
+  //Get Var Pagetitle from Storyline
+var player = GetPlayer();
+var pagetitle = player.GetVar(“PageTitle”);
+
+//Send PageTitle to Analytics
+ga(‘send’, ‘screenview’, {screenName: pagetitle});
+}
+
+function Script14()
+{
+  ga(‘send’, ‘event’, ‘Question’, ‘incorrect’, ‘Question 3’);
+
+
+}
+
+function Script15()
+{
+  ga(‘send’, ‘event’, ‘Question’, ‘correct’, ‘Question 3’);
+
+
 }
 
 function Script16()
@@ -207,56 +199,12 @@ ga(‘send’, ‘screenview’, {screenName: pagetitle});
 
 function Script17()
 {
-  ga('send', 'event', 'Button', 'click', 'Non-Work');
-}
-
-function Script18()
-{
-  ga('send', 'event', 'Button', 'click', 'Work-Related');
-}
-
-function Script19()
-{
-  //Get Var Pagetitle from Storyline
-var player = GetPlayer();
-var pagetitle = player.GetVar(“PageTitle”);
-
-//Send PageTitle to Analytics
-ga(‘send’, ‘screenview’, {screenName: pagetitle});
-}
-
-function Script20()
-{
-  ga(‘send’, ‘event’, ‘Question’, ‘incorrect’, ‘Question 3’);
-
-
-}
-
-function Script21()
-{
-  ga(‘send’, ‘event’, ‘Question’, ‘correct’, ‘Question 3’);
-
-
-}
-
-function Script22()
-{
-  //Get Var Pagetitle from Storyline
-var player = GetPlayer();
-var pagetitle = player.GetVar(“PageTitle”);
-
-//Send PageTitle to Analytics
-ga(‘send’, ‘screenview’, {screenName: pagetitle});
-}
-
-function Script23()
-{
   ga(‘send’, ‘event’, ‘Result’, ‘completed’);
 
 
 }
 
-function Script24()
+function Script18()
 {
   //Get Var Pagetitle from Storyline
 var player = GetPlayer();
