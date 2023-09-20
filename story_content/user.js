@@ -2,76 +2,76 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6JQhhThIebd":
+      case "5unFjmvld9y":
         Script1();
         break;
-      case "64vLVqpZpNs":
+      case "6JAwMYJPjfB":
         Script2();
         break;
-      case "6EPGmWE0A90":
+      case "6q2V3WUvXBF":
         Script3();
         break;
-      case "6OGx6tStbWO":
+      case "6TKhGh19vr9":
         Script4();
         break;
-      case "5oIeTRCb5je":
+      case "6QKYNw3nIbU":
         Script5();
         break;
-      case "5msupnYS25y":
+      case "5ZEoFZP2wsJ":
         Script6();
         break;
-      case "5WasUkiT97P":
+      case "6B6rhZXg93R":
         Script7();
         break;
-      case "6JZcmhv5zPh":
+      case "60i7v7W41SR":
         Script8();
         break;
-      case "6DvcaiBxXO6":
+      case "6M6swdhdU0W":
         Script9();
         break;
-      case "6CcmHe2zaPc":
+      case "6Y83SrTqRnC":
         Script10();
         break;
-      case "6eHBYDr8DsL":
+      case "6cRQaDBNNMk":
         Script11();
         break;
-      case "5sc9GV32aWG":
+      case "5diACYNbnrj":
         Script12();
         break;
-      case "6oKQQRDZF5t":
+      case "6gdl6cInoIz":
         Script13();
         break;
-      case "6BxQDrzJ5Uy":
+      case "6bSusoXijPj":
         Script14();
         break;
-      case "5dl6qQuI52h":
+      case "5wYs2bbzK5b":
         Script15();
         break;
-      case "6nR6sgD6esT":
+      case "5lxkWK4Gt1H":
         Script16();
         break;
-      case "6LpMNdjFheC":
+      case "5uaRoe24L6l":
         Script17();
         break;
-      case "6JHoZiVxxVX":
+      case "5kYYIE0Uh6n":
         Script18();
         break;
-      case "5iTpsSHwWCD":
+      case "6dBaI2ujqzd":
         Script19();
         break;
-      case "5o1OJUzTm4H":
+      case "5nsunFo39Fm":
         Script20();
         break;
-      case "6MGSF10sbg7":
+      case "6Q4fw9I1aiM":
         Script21();
         break;
-      case "6SEHrbsFXxI":
+      case "5dd59fX8VYh":
         Script22();
         break;
-      case "6IhemKvUcRW":
+      case "6gPkijdMVBY":
         Script23();
         break;
-      case "6Gd871O44ng":
+      case "5bekm01sZ2Z":
         Script24();
         break;
   }
@@ -84,7 +84,10 @@ var player = GetPlayer();
 var pagetitle = player.GetVar("PageTitle");
 
 //Send PageTitle to Analytics
-ga('send', 'screenview', {screenName: 'Slide1'});
+gtag('event', 'screen_view', {
+  'app_name': 'myAppName',
+  'screen_name': 'Slide1'
+});
 }
 
 function Script2()
