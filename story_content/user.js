@@ -2,77 +2,68 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5unFjmvld9y":
+      case "6oPVNy7JsGI":
         Script1();
         break;
-      case "6JAwMYJPjfB":
+      case "6DylH942S8k":
         Script2();
         break;
-      case "6q2V3WUvXBF":
+      case "5yBmbaIrS4Q":
         Script3();
         break;
-      case "6TKhGh19vr9":
+      case "6kLHb5asRRi":
         Script4();
         break;
-      case "6QKYNw3nIbU":
+      case "5t3UvwqiLxh":
         Script5();
         break;
-      case "5ZEoFZP2wsJ":
+      case "6CPEqYvLpxx":
         Script6();
         break;
-      case "6B6rhZXg93R":
+      case "6pybWDjU8iJ":
         Script7();
         break;
-      case "60i7v7W41SR":
+      case "6fnoNxa4Opm":
         Script8();
         break;
-      case "6M6swdhdU0W":
+      case "6lKMETSL1oe":
         Script9();
         break;
-      case "6Y83SrTqRnC":
+      case "6A0QKxKDSNk":
         Script10();
         break;
-      case "6cRQaDBNNMk":
+      case "6VCvnTYQLX1":
         Script11();
         break;
-      case "5diACYNbnrj":
+      case "5rWHmVpUuWO":
         Script12();
         break;
-      case "6gdl6cInoIz":
+      case "6Ae1sA8mRUX":
         Script13();
         break;
-      case "6bSusoXijPj":
+      case "6NQh5qH3pga":
         Script14();
         break;
-      case "5wYs2bbzK5b":
+      case "6rieKHi92Ur":
         Script15();
         break;
-      case "5lxkWK4Gt1H":
+      case "5zdAXLtn8Sm":
         Script16();
         break;
-      case "5uaRoe24L6l":
+      case "6lINpM1k50F":
         Script17();
         break;
-      case "5kYYIE0Uh6n":
+      case "69pPsVxY93H":
         Script18();
         break;
-      case "6dBaI2ujqzd":
+      case "68hEMYKLSYn":
         Script19();
         break;
-      case "5nsunFo39Fm":
+      case "69MOM6kH9w2":
         Script20();
         break;
-      case "6Q4fw9I1aiM":
+      case "6QtbBPQOC23":
         Script21();
-        break;
-      case "5dd59fX8VYh":
-        Script22();
-        break;
-      case "6gPkijdMVBY":
-        Script23();
-        break;
-      case "5bekm01sZ2Z":
-        Script24();
         break;
   }
 }
@@ -84,7 +75,7 @@ var player = GetPlayer();
 var pagetitle = player.GetVar("PageTitle");
 
 //Send PageTitle to Analytics
-gtag('event', 'screen_view', {
+gtag('event', 'page_view', {
   'app_name': 'myAppName',
   'screen_name': 'Slide1'
 });
@@ -189,14 +180,12 @@ ga(‘send’, ‘screenview’, {screenName: pagetitle});
 
 function Script14()
 {
-  ga('send', 'event', 'Question', 'incorrect', 'Question 2');
+  ga('send', 'event', 'Button', 'click', 'Non-Work');
 }
 
 function Script15()
 {
-  ga('send', 'event', 'Question', 'correct', 'Question 2');
-
-
+  ga('send', 'event', 'Button', 'click', 'Work-Related');
 }
 
 function Script16()
@@ -211,12 +200,16 @@ ga(‘send’, ‘screenview’, {screenName: pagetitle});
 
 function Script17()
 {
-  ga('send', 'event', 'Button', 'click', 'Non-Work');
+  ga(‘send’, ‘event’, ‘Question’, ‘incorrect’, ‘Question 3’);
+
+
 }
 
 function Script18()
 {
-  ga('send', 'event', 'Button', 'click', 'Work-Related');
+  ga(‘send’, ‘event’, ‘Question’, ‘correct’, ‘Question 3’);
+
+
 }
 
 function Script19()
@@ -231,36 +224,12 @@ ga(‘send’, ‘screenview’, {screenName: pagetitle});
 
 function Script20()
 {
-  ga(‘send’, ‘event’, ‘Question’, ‘incorrect’, ‘Question 3’);
-
-
-}
-
-function Script21()
-{
-  ga(‘send’, ‘event’, ‘Question’, ‘correct’, ‘Question 3’);
-
-
-}
-
-function Script22()
-{
-  //Get Var Pagetitle from Storyline
-var player = GetPlayer();
-var pagetitle = player.GetVar(“PageTitle”);
-
-//Send PageTitle to Analytics
-ga(‘send’, ‘screenview’, {screenName: pagetitle});
-}
-
-function Script23()
-{
   ga(‘send’, ‘event’, ‘Result’, ‘completed’);
 
 
 }
 
-function Script24()
+function Script21()
 {
   //Get Var Pagetitle from Storyline
 var player = GetPlayer();
