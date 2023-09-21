@@ -877,3 +877,6 @@ body:not(.is-touchable-tablet) .cs-npnxnanbnsnfns00001100101 .cs-button:hover .t
 .cs-ExternalInterfaceErrorSlide .cs-buttonOK:active {
   background: rgba(68, 68, 68, 1);
 }
+#slide-window > div > div > div.slide-transition-container > div > div > div.slide-layer.base-layer.shown > div:nth-child(13){
+	color: yellow;
+}
